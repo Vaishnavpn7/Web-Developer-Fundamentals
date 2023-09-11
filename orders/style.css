@@ -1,0 +1,135 @@
+.navbar{
+    display: flex;
+    align-items: center;
+    /* justify-content: space-between; */
+    background-color: #ffffff;
+    height: 60px;
+    padding: 0 20px;
+    gap: 16px;
+    /* margin-left: 20px; */
+}
+.navbar img {
+    height: 40px;
+}
+
+.navbar-button{
+
+    margin: 0 10px;
+    padding: 10px 20px;
+    background-color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+
+}
+
+.navbar-button:hover{
+    border-bottom: 5px solid #0ddc33;
+    color: #0ddc33 ;
+
+ }
+
+ .heading{
+  font-family: 'Poppins', sans-serif;
+  font-size: 36px;
+  color: #008080;
+  text-transform: uppercase;
+  text-align: center; 
+  letter-spacing: 2px; 
+  margin-bottom: 20px; 
+  border-bottom: 2px solid #008080;
+  padding: 10px; 
+  background-color: #f5f5f5;
+ }
+
+ #filter-options {
+    display: flex;
+    /* justify-content: space-around; */
+    gap: 20px;
+    margin-top: 20px;
+    /* border-bottom: 2px solid #008080; */
+
+
+  }
+  
+  #filter-options label {
+    font-size: 18px;
+    cursor: pointer;
+    transition: color 0.3s;
+  }
+  
+  #filter-options input[type="checkbox"] {
+    margin-right: 10px; 
+  }
+  
+  #filter-options input[type="checkbox"]:checked + label {
+    font-weight: bold;
+    color: #008080; 
+  }
+  
+  /* Style the checkbox */
+  #filter-options input[type="checkbox"] {
+    -webkit-appearance: none; /* Remove default appearance for Webkit browsers */
+    -moz-appearance: none; /* Remove default appearance for Firefox */
+    appearance: none; /* Remove default appearance for other browsers */
+    width: 20px;
+    height: 20px;
+    background-color: #fff;
+    border: 2px solid #008080;
+    border-radius: 4px;
+    cursor: pointer;
+    outline: none;
+    vertical-align: middle;
+    position: relative;
+  }
+  
+  /* Style the checked state of the checkbox */
+  #filter-options input[type="checkbox"]:checked {
+    background-color: #008080;
+  }
+  
+  /* Style the checkmark */
+  #filter-options input[type="checkbox"]:checked::before {
+    content: "\2713"; /* Unicode checkmark character */
+    display: block;
+    width: 18px;
+    height: 18px;
+    color: #fff;
+    font-size: 16px;
+    text-align: center;
+    line-height: 18px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  #order-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    font-family: Arial, sans-serif;
+  }
+  
+  #order-table th,
+  #order-table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+  }
+  
+  #order-table th {
+    background-color: #008080;
+    color: #fff;
+  }
+  
+  #order-table tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+  
+  #order-table tbody tr:hover {
+    background-color: #ddd;
+  }
+  
+  

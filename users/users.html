@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Listing</title>
+    <link rel="stylesheet" href="./style.css">
+    <!-- Include any CSS or styling here -->
+</head>
+<body>
+
+    <div class="navbar">
+        <img src="../images/logo.png" alt="">
+        <h1>Kafene</h1>
+    <a href="../orders/orders.html">
+        <button class="navbar-button">Orders</button></a>
+    <a href="../products/products.html">
+        <button class="navbar-button">Products</button></a>
+    <a href="./users.html">
+        <button class="navbar-button">Users</button></a>
+    
+    </div>
+
+
+    <h1 class="heading">Users</h1>
+    <div class="search">
+        <input type="text" id="searchInput" placeholder="Search by name...">
+        <button class="buttons" onclick="searchUsers()">Search</button>
+        <button class="buttons" onclick="resetSearch()">Reset</button>
+    </div>
+    <table id="userTable">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Profile Pic</th>
+                <th>Full Name</th>
+                <th>Date of Birth</th>
+                <th>Gender</th>
+                <th>Current City</th>
+                <th>Current Country</th>
+            </tr>
+        </thead>
+        <tbody id="userTableBody">
+            <!-- User data will be dynamically added here -->
+        </tbody>
+    </table>
+
+    <script src="users.js"></script>
+</body>
+</html>

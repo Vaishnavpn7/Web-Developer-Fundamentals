@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pharmacy Store - Orders</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,300&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+
+    <!-- <link rel="stylesheet" href="styles.css"> -->
+</head>
+<body>
+    <div class="navbar">
+            <img src="../images/logo.png" alt="">
+            <h1>Kafene</h1>
+        <a href="./orders.html">
+            <button class="navbar-button">Orders</button></a>
+        <a href="../products/products.html">
+            <button class="navbar-button">Products</button></a>
+        <a href="../users/users.html">
+            <button class="navbar-button">Users</button></a>
+        
+    </div>
+    <div class="container">
+        <h1 class="heading">Orders</h1>
+        <div id="filter-options">
+            <label><input type="checkbox" id="filter-new"> New</label>
+            <label><input type="checkbox" id="filter-packed"> Packed</label>
+            <label><input type="checkbox" id="filter-intransit"> InTransit</label>
+            <label><input type="checkbox" id="filter-delivered"> Delivered</label>
+        </div>
+        <table id="order-table">
+            <thead>
+                <tr>
+                    <th>Order ID</th>
+                    <th>Customer Name</th>
+                    <th>Order Date</th>
+                    <th>Order Time</th>
+                    <th>Amount</th>
+                    <th>Order Status</th>
+                </tr>
+            </thead>
+            <tbody id="order-list">
+                <!-- Orders will be dynamically inserted here -->
+            </tbody>
+        </table>
+    </div>
+    <!-- <script src="jquery.min.js"></script> -->
+    <script src="orders.js"></script>
+</body>
+</html>

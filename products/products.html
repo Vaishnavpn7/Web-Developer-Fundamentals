@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Listing</title>
+    <link rel="stylesheet" href="./style.css">
+    <!-- Include jQuery library -->
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+
+    <!-- <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> -->
+</head>
+<body>
+
+    <div class="navbar">
+        <img src="../images/logo.png" alt="">
+        <h1>Kafene</h1>
+    <a href="../orders/orders.html">
+        <button class="navbar-button">Orders</button></a>
+    <a href="./products.html">
+        <button class="navbar-button">Products</button></a>
+    <a href="../users/users.html">
+        <button class="navbar-button">Users</button></a>
+    
+    </div>
+    <h1 class="heading">Product Listing</h1>
+    
+    <div>
+        <label><input type="checkbox" id="filter-expired"> Filter Expired</label>
+        <label><input type="checkbox" id="filter-low-stock"> Filter Low Stock</label>
+    </div>
+
+    <table>
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Medicine Name</th>
+                <th>Medicine Brand</th>
+                <th>Expiry Date</th>
+                <th>Unit Price</th>
+                <th>Prescription Required</th>
+                <th>Stock</th>
+            </tr>
+        </thead>
+        <tbody id="product-list"></tbody>
+    </table>
+
+    <script src="products.js"></script>
+</body>
+</html>
